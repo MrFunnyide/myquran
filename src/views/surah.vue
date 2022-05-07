@@ -1,8 +1,8 @@
 <template>
-     <div class="m-3">
+     <div>
           <ol>
                <li v-for="ayat in ayatQuran" :key="ayat.id" style="list-style: none;">
-                    <p class="ayat">{{ ayat.text_uthmani }}<sub>({{ayat.verse_key}})</sub> </p> <hr>
+                    <p class="ayat m-3"><sub>({{ayat.verse_key}})</sub> {{ ayat.text_uthmani }}</p> <hr>
                </li>
           </ol>
      </div>
@@ -10,11 +10,13 @@
 <script>
 import axios from 'axios'
 import { ref } from 'vue'
+const Surah = 'https://api.quran.com/api/v4/chapters?language=id'
+
 export default {
      data() {
           return {
                ayatQuran: ref([]),
-               translateQuran: ref([])
+               translateQuran: ref([]),
           }
      },
      mounted() {
