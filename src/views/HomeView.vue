@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="jumbotron text-center mt-2">
+    <div class="jumbotron text-center mt-5">
      <img class="w-25" src="../assets/logoQuran.png" alt="">
     </div>
     <!-- container searchbox -->

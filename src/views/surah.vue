@@ -1,5 +1,5 @@
 <template>
-     <div class="jumbotron text-center mt-3">
+     <div class="jumbotron text-center" style="margin-top: 70px;">
           <h2>{{infoSurah.name_simple}}</h2>
           <br>
      </div>

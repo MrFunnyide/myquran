@@ -10,3 +10,7 @@
 body {
      background-image: url(../assets/bgfour.png);
 }
+
+html {
+     scroll-behavior: smooth;
+}

@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #DAE5D0;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #DAE5D0;">
   <div class="container">
     <a class="navbar-brand" href="#">Al-Quran</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,6 +18,12 @@
   </div>
 </nav>
   <router-view/>
+  <!-- Copyright -->
+  <div class="text-center p-4 bg-secondary">
+    © 2022 Copyright:
+    <a class="text-black" href="https://github.com/MrFunnyide">Aji Bayu Permadi</a>
+  </div>
+  <!-- Copyright -->
 </template>
 <style>
 nav {
