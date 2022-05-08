@@ -14,3 +14,9 @@ body {
 html {
      scroll-behavior: smooth;
 }
+
+/* footer {
+     position: absolute;
+     bottom: 0px;
+     width: 100%;
+} */
