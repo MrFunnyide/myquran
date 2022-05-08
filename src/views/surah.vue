@@ -1,8 +1,10 @@
 <template>
      <div>
           <ol>
-               <li v-for="ayat in ayatQuran" :key="ayat.id" style="list-style: none;">
-                    <p class="ayat m-3"><sub>({{ayat.verse_key}})</sub> {{ ayat.text_uthmani }}</p> <hr>
+               <li v-for="(ayat, index) in ayatQuran" :key="index" style="list-style: none;">
+                    <p class="ayat m-3"><sub>({{ayat.verse_key}})</sub> {{ ayat.text_uthmani }}</p>
+                    <p v-html="translateQuran[index].text"></p>
+                    <hr>
                </li>
           </ol>
      </div>
