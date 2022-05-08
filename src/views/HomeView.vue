@@ -1,8 +1,8 @@
 <template>
-  <div class="">
+  <div>
     <div class="d-inline-flex flex-wrap justify-content-center">
-    <div class="card m-4" style="width: 15rem;" v-for="listChapter in surah" :key="listChapter.id">
-      <div class="card-body">
+    <div class="card m-4 shadow p-3 mb-5 bg-body rounded text-center" style="width: 15rem;" v-for="listChapter in surah" :key="listChapter.id">
+      <div class="card-body ">
         <h6 class="card-title">{{ listChapter.name_simple }}</h6>
         <p class="card-text fw-lighter ">{{listChapter.revelation_place}} <br>{{listChapter.verses_count}} ayat</p>
         <!-- <p class="card-text fw-lighter"></p> -->

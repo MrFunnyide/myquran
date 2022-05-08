@@ -6,3 +6,7 @@
      line-height: 50px;
      text-align: right;
 }
+
+body {
+     background-image: url(../assets/bgfour.png);
+}

@@ -1,6 +1,6 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #DAE5D0;">
+  <div class="container">
     <a class="navbar-brand" href="#">Al-Quran</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -19,3 +19,10 @@
 </nav>
   <router-view/>
 </template>
+<style>
+nav {
+     background-image: url(../src/assets/bgOne.png);
+     border-end-start-radius: 25px;
+     border-end-end-radius: 25px;
+}
+</style>
