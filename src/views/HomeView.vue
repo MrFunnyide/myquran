@@ -2,11 +2,9 @@
   <div>
     <!-- container searchbox -->
   <div class="container">
-    <div class="row align-item-center justify-content-center">
-      <form class="mt-5">
-        <input class="form-control form-control-lg mb-1 font-italic" type="text" v-model="search" placeholder="cari surat..." />
+      <form class="mt-5 w-auto">
+        <input class="form-control form-control-lg mb-1" type="text" v-model="search" placeholder="search surah..." />
       </form>
-    </div>
   </div>
     <div class="d-inline-flex flex-wrap justify-content-center">
     <div class="card m-4 shadow p-3 mb-5 bg-body rounded text-center" style="width: 15rem;" v-for="listChapter in cariSurah" :key="listChapter.id">
