@@ -1,4 +1,8 @@
 <template>
+     <div class="jumbotron text-center mt-3">
+          <h2>{{infoSurah.name_simple}}</h2>
+          <br>
+     </div>
      <div>
           <ol>
                <li v-for="(ayat, index) in ayatQuran" :key="index" style="list-style: none;">
@@ -8,22 +12,24 @@
                </li>
           </ol>
      </div>
+     <p>{{infoSurah.name_simple}}</p>
 </template>
 <script>
 import axios from 'axios'
 import { ref } from 'vue'
-const Surah = 'https://api.quran.com/api/v4/chapters?language=id'
 
 export default {
      data() {
           return {
                ayatQuran: ref([]),
                translateQuran: ref([]),
+               infoSurah: ref([])
           }
      },
      mounted() {
           this.getAyatQuran()
           this.getTranslateQuran()
+          this.getInfoSurah()
      },
      methods: {
           getAyatQuran() {
@@ -42,6 +48,14 @@ export default {
                     console.log('error' + error)
                })
           },
+          getInfoSurah() {
+               axios.get(`https://api.quran.com/api/v4/chapters/${this.$route.params.id}?language=id`)
+               .then((response) => {
+                    this.infoSurah = response.data.chapter
+               }).catch((error) => {
+                    console.log('error' + error)
+               })
+          }
      }
 }
 </script>
