@@ -19,7 +19,7 @@
 </nav>
   <router-view/>
   <!-- Copyright -->
-  <div class="text-center p-4 bg-secondary">
+  <div class="text-center p-4 bg-secondary fixed-bottom">
     © 2022 Copyright:
     <a class="text-black" href="https://github.com/MrFunnyide">Aji Bayu Permadi</a>
   </div>
