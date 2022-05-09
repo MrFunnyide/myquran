@@ -12,7 +12,6 @@
                </li>
           </ol>
      </div>
-     <p>{{infoSurah.name_simple}}</p>
 </template>
 <script>
 import axios from 'axios'
